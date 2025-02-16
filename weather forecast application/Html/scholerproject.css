@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body {
+    width: 100%;
+    height: 100%;
+    font-family: "Outfit", sans-serif;
+    background-color: rgb(2, 28, 21);
+    /* background-image: url("	https://images3.alphacoders.com/109/1091500.jpg");
+    background-size: cover;
+    background-position: top center; */
+  }
+  #mains{
+    width: 100%;
+    height: 100%;
+    /* background-image: url("	https://images3.alphacoders.com/109/1091500.jpg");
+    background-size: cover;
+    background-position: center; */
+  }
+  #heads{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 60, 57);
+  }
+  #one{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 60, 57);
+  }
+  #two{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 60, 57);
+  }
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+  header {
+    position: absolute;
+    padding: 190px 209px 39px;
+  }
+  header input {
+    width: 100%;
+    max-width: 290px;
+    padding: 19px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(18, 18, 18, 0.4);
+    border-radius: 16px;
+    border-bottom: 3px solid #e7e3dc;
+  
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    color: #eeeeee;
+  }
+   header input:focus {
+    background-color: rgba(18, 18, 18, 0.8);
+  }
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 40%;
+    height: 50%;
+    box-shadow: 1px 1px 60px 2px rgba(0, 0, 0, 0.481);
+    /* background-color: rgb(130, 106, 75); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  } 
+  .location .city {
+    color: #eeeeee;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .location .date {
+    color: #eeeeee;
+    font-size: 16px;
+  }
+  .current .temp {
+    color: #eeeeee;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  .current .temp span {
+    font-weight: 200;
+  }
+  .current .weather {
+    color: #eeeeee;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  }
+  .current .hi-low {
+    color: #eeeeee;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.4);
+  } 
+  #one #photu{
+    position: absolute;
+    left: 50%;
+    bottom: -100%; 
+     transform: translate(-50%,-50%);
+     /* margin-left: 80vh;
+    margin-top: 80px;  */
+    height: 60vh;
+    width: 20%;
+    z-index: 999999;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1577256436245-8640190473bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fHN1bW1lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+#one #photus{
+    display: flex;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    z-index: 999999;
+    transform: translate(0%,-50%);
+}
+#one #photo{
+    width: 270px;
+    height: 60vh;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: yellow;
+}
+#photo h2{
+  margin-left: 95px;
+  margin-top: 30px;
+  font-family: "fasthand";
+  font-size: 50px;
+  color: rgb(12, 10, 7);
+  font-weight: 100;
+}
+#one #photo:nth-child(1){
+  background-size: cover;
+  background-position: cover;
+  background-image: url("https://images.unsplash.com/photo-1546708623-6e5671915b91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fHdpbnRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+#one #photo:nth-child(2){
+  background-size: cover;
+  background-position: cover;
+  background-image: url("https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXV0dW1ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#one #photo:nth-child(3){
+  background-size: cover;
+  background-position: cover;
+  background-image: url("https://images.unsplash.com/photo-1501691223387-dd0500403074?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+#img{
+   display: flex;
+   /* margin-top: 35px;  */
+  /* margin-left: 7vw;  */
+  width: 30vw;
+  height: 40vh;
+  position: relative;
+  left: 34%;
+  top: 30%;
+  border: 5px solid #fff;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  transform: translate(0%,-50%);
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/uploads/14121010130570e22bcdf/e1730efe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3VtbWVyJTIwaG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+#two #c2{
+  position: absolute;
+  margin-top: 95px;
+  margin-left: 470px;
+  width: 32%;
+  height: 41%;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: .2px solid #fff;
+}
+#img1{
+ /* background-color: yellow;  */
+ width: 100%;
+ height: 100%;
+ position: absolute;
+}
+#imgtxt{
+  position: absolute;
+  color: #fff;
+  margin-left: 80vw;
+  margin-top: -30vh;
+}
+#imgtxt h2{
+  font-family: "fasthand";
+  font-weight: 900;
+  font-size: 50px;
+}
+#img #img1:nth-child(2){
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1603321544554-f416a9a11fcf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cmFpbnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+  left: 100%;
+}
+#img #img1:nth-child(6){
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1445543949571-ffc3e0e2f55e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2ludGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  left: 300%;
+}
+#img #img1:nth-child(3){
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1504788363733-507549153474?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8QVV0dW1ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  left: 200%;
+}
+#progress{
+  width: 4vw;
+  height: 1vh;
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+}
+#text{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 40%;
+  height: 50%;
+  z-index: 999999;
+}
+#text1{
+  position: absolute;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 88%;
+  height: 88%;
+  box-shadow: 1px 1px 60px 2px rgba(0, 0, 0, 0.481);
+  background-color: #bdb6a7;
+}
+#text1 #circle{
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  border: .2px solid floralwhite;
+  right: -10%;
+  bottom: -10%;
+}
+#text1 #circle1{
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  border-radius: 50%;
+  border: .2px solid rgb(19, 18, 16);
+  right: -15%;
+  bottom: -14%;
+}
+#text22 #circ{
+  width: 30%;
+  border: 4px dotted rgb(28, 23, 23);
+  /* border: 60%; */
+}
+#text h1{
+  margin-top: 40px;    
+  margin-left: 110px;
+}
+#text #text1 p{
+  margin-top: 50px;
+  width: 70%;
+   font-family: "pacifico";
+  margin-left: 80px;
+  margin-right: 90px;
+}
+#text2{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0%;
+  width: 40%;
+  bottom: 0%;
+  height: 50%;
+  z-index: 999999;
+}
+#text22{
+  position: absolute;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 88%;
+  height: 88%;
+  box-shadow: 1px 1px 60px 2px rgba(0, 0, 0, 0.481);
+  background-color: #bdb6a7;
+}
+#text22 p{
+  font-family: "pacifico";
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+#nav{
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  z-index: 99;
+  color: #fff;
+}
+#nav h1{
+  margin-left: 25px;
+  font-family: "Fasthand";
+  position: fixed;
+}
+#nav h2{
+  margin-left: 1405px;
+  font-family: "Fasthand";
+  position: fixed;
+}
+#two #sun P{
+  top: 62%;
+  left: 5%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.238);
+  font-size: 70px;
+  line-height: 80px;
+  font-family: "fasthand";
+}
